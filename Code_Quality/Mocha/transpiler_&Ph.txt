@@ -1,0 +1,11 @@
+Speaking of names,
+Babel is one of the most prominent
+transpilers out there.
+
+
+Polyfills
+New language features may include not only syntax constructs
+and operators, but also built-in functions.
+
+A script that updates/adds new functions is called “polyfill”.
+It “fills in” the gap and adds missing implementations.
