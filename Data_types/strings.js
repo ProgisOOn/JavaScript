@@ -55,7 +55,7 @@ let strsadasd = 'My\n';
 
 // alert(strin.at(strin.indexOf("id",2)))
 
-let str = 'As sly as a fox, as strong as an ox';
+let str = 'as sly as a fox, as strong as an ox';
 let target = 'as';
 
 // let pos = 0;
@@ -67,8 +67,60 @@ let target = 'as';
 //     pos = foundPosition + 1;
 // }
 
-let pos = -1;
+// let pos = -1;
 
-while ((pos = str.indexOf(target,pos + 1)) != -1){
-    alert( pos );
+// while ((pos = str.indexOf(target,pos + 1)) != -1){
+//     alert( pos );
+// }
+
+// I've understood why it is so large cunstruct in the example above
+//let's examine it in the if expression
+
+// if (str.indexOf(target) != -1) { //it doesn't work because it returns 0 position as the start of substring
+//     alert('Yes, I Found'); // but if converts it like false
+// } // we need explicitly compare with -1
+
+// if position doesn't make sense
+// alert("Widget".includes("id"));
+// alert("Widget".includes("id", 3));
+// alert("Widget".endsWith('get'));
+// alert("Widget".startsWith('Wid'));
+
+
+
+
+
+let justify = 'stringify';
+// alert(justify.slice(0, 6));
+// alert(justify.slice(5));
+
+// alert(justify.slice(4));
+
+// alert(justify.substring(2,6));
+// alert(justify.substring(6,2));
+
+// alert(justify.substr(-4,2))
+
+// alert("Z".codePointAt(0).toString(16));
+// alert("z".codePointAt(0));
+// alert("z".codePointAt(0).toString(16));
+
+// alert(String.fromCodePoint(90));
+// alert(String.fromCodePoint(122));
+// alert(String.fromCodePoint(0x5a));
+
+let smatrstring = '';
+
+for ( let i = 65; i <= 220; i++) {
+    smatrstring += String.fromCodePoint(i);
 }
+// alert(smatrstring);
+// alert('Zealand'.localeCompare('Österreich'));
+
+
+
+let trimed_string = "           I'm a bit trimed                "
+alert(trimed_string.length);
+alert(trimed_string.trim().length);
+alert(trimed_string.trim().repeat(3));
+
