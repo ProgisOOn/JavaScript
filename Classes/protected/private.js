@@ -14,5 +14,5 @@ class CoffeeMachine {
 
 let coffeeMachine = new CoffeeMachine();
 
-coffeeMachine.#fixWaterAmount(123);
-coffeeMachine.#waterLimit = 1000;
+coffeeMachine.#fixWaterAmount(123); //error
+// coffeeMachine.#waterLimit = 1000; // error
