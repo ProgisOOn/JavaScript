@@ -1,0 +1,26 @@
+.welcome {
+    height: 20px;
+    width: 170px;
+    color:brown;
+    padding-left: 15px;
+    font-size: 18px;
+    background-color: burlywood;
+    border-radius: 4px;
+    transition: all 2ms;
+    animation: control 2s;
+    box-shadow: 7px 5px 20px black;
+}
+
+.body {
+    perspective: 3000px;
+}
+
+@keyframes control {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(50deg);
+    }
+}

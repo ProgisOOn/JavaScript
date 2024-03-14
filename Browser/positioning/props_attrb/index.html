@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>  Original 1
+            <ul>
+                <li>nested: 1</li>
+                <li>nested: 2</li>
+                <li>nested: 3</li>
+            </ul>
+        </li>
+        <li> Original 2
+            <ul>
+                <li>nested: 4</li>
+                <li>nested: 5</li>
+                <li>nested: 6</li>
+            </ul>
+        </li>
+        <li> Original 3
+            <ul>
+                <li>nested: 7</li>
+                <li>nested: 8</li>
+                <li>nested: 9</li>
+            </ul>
+        </li>
+        <li> Original 4
+            <ul>
+                <li>nested: 10</li>
+                <li>nested: 11</li>
+                <li>nested: 12</li>
+            </ul>
+        </li>
+        <li> Original 5
+            <ul>
+                <li>nested: 13</li>
+                <li>nested: 14</li>
+                <li>nested: 15</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <script>
+        let ul = document.body.firstElementChild;
+        let listOfLi = ul.querySelectorAll('li');
+        for (let elem of listOfLi) {
+            let firstPart = elem.innerText.slice(0, 10);
+            let nestedLi = elem.querySelectorAll('li');
+            let secondPart = nestedLi.length;
+            let finalString = firstPart + ' ' + secondPart;
+            console.log(finalString);
+        }
+    </script>
+</body>
+</html>

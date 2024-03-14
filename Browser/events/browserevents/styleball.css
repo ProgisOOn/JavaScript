@@ -1,0 +1,15 @@
+#field {
+    width: 200px;
+    height: 150px;
+    border: 10px solid black;
+    background-color: hsl(120, 100%, 50%);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+#ball {
+    position: absolute;
+    bottom: 0;
+    transition: all 1s
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="elem" type="button" onclick="alert('before')" value="Click me">
+    <script>
+        function count() {
+            for (let i=0;i<=3;i++) {
+                alert(`Count ${i}`);
+            }
+        }
+
+        elem.onclick = count;
+        // onlly one handler works from script
+    </script>
+</body>
+</html>

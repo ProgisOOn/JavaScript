@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buttonHideText">Click to hide the text</button>
+    <div>Text</div>
+    <script defer>
+        function hideDiv() {
+            let div = buttonHideText.nextElementSibling;
+            div.hidden = true;
+        }
+        
+        buttonHideText.addEventListener("click", hideDiv);
+    </script>
+
+    <button id="hideMyself">Hide it</button>
+    <style>
+        #hideMyself {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        hideMyself.addEventListener("click", function() {
+            this.hidden = true;
+        })
+    </script>
+</body>
+</html>

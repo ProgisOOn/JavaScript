@@ -1,0 +1,49 @@
+.container {
+    padding: 0 15px;
+    max-width: 1230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    display: block;
+    margin: 0;
+    max-width: 600px;
+    background-color: rgba(152, 251, 152, 0.5);
+    border-top: 2px solid lightgreen;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 5px 10px;
+
+}
+
+p{
+    margin: 5px 10px;
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.close-btn::after {
+    content: "]";
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.close-btn::before {
+    content: "[";
+    font-size: 20px;
+    font-weight: 550;
+}

@@ -1,0 +1,27 @@
+li {
+    list-style: none;
+}
+ul {
+    margin-left: 20px;
+    padding-left: 2px;
+    display:list-item;
+    list-style-type: "⯈";
+    cursor: pointer;
+}
+
+.menu > li {
+    display: none;
+}
+
+.menu-open >li {
+    display: block;
+    font-weight: 400;
+}
+
+.menu-open {
+    list-style-type: "▼";
+}
+
+.bold {
+    font-weight: 700;
+}
