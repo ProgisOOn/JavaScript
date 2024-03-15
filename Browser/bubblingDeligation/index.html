@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        border: 2px solid blue;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form id="form">FORM
+        <div id="div">DIV
+            <p id="p">
+                P
+            </p>
+        </div>
+    </form>
+    <script>
+    form.addEventListener("click", function(event) {
+        alert(`target--> ${event.target.tagName} this -- ${this.tagName}`)
+        event.stopPropagation();
+    });
+    div.addEventListener("click", function(event) {
+        alert(`target--> ${event.target.tagName} this -- ${this.tagName}`)
+        event.stopPropagation();
+    });
+    p.addEventListener("click", function(event) {
+        alert(`target--> ${event.target.tagName} this -- ${this.tagName}`)
+        event.stopPropagation();
+    });
+    </script>
+</body>
+</html>
